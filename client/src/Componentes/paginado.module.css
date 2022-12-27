@@ -1,0 +1,29 @@
+.ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  font-size: 21px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-height: 50px;
+}
+
+
+
+.contar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin-bottom: 0rem;
+  border: #FF9900 1.5px solid;
+  color: white;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+
+
+}

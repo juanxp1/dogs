@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 30px;
+    max-width: 40vh;
+    max-height: 100vh;
+    padding-bottom: 20px;
+
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 70vh;
+    max-width: 40vh;
+    border-radius: 10px;
+    background-color: #FF9900;
+    text-align: center;
+    color: rgb(7, 0, 0);
+
+}
+
+.tarjeta:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: all 0.3s;
+}
+
+
+.img {
+    border-radius: 5px;
+    max-height: 230px;
+    max-width: 100%;
+}
+
+.name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    max-height: 0px;
+}
+
+.tempe {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    max-height: 0px;
+}
+
+.boton {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #191414;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+    border: #FF9900 2px solid;
+}
