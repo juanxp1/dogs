@@ -9,7 +9,7 @@ export const RESET_DETALLES = "RESET_DETALLES";
 //allDogss
 export const getAllDogs = () => {
     return async function (dispatch) {
-        let dog = await axios.get('http://localhost:3001/dogs')
+        let dog = await axios.get('/dogs')
         //console.log("InfoApi", dog.data)
         return dispatch({
             type: GET_ALL_DOGS,
@@ -21,7 +21,7 @@ export const getAllDogs = () => {
 //DogsXQuery
 export const seekDogs = (name) => {
     return async function (dispatch) {
-        let query = await fetch(`http://localhost:3001/dogs?name=${name}`)
+        let query = await fetch(`/dogs?name=${name}`)
         let json = await query.json()
         return dispatch({
             type: SEARCH_DOGS,
@@ -35,7 +35,7 @@ export const seekDogs = (name) => {
 export const getDogDetail = (id) => {
 
     return async (dispatch) => {
-        await axios.get(`http://localhost:3001/dogs/${id}`)
+        await axios.get(`/dogs/${id}`)
             .then((response) =>
                 dispatch({ type: GET_DOGS_DETAILS, payload: response.data })
             )
