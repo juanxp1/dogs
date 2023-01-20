@@ -13,13 +13,21 @@ export const FILTRO_DB = "FILTRO_DB"
 
 //allDogss
 export const getAllDogs = () => {
+
+
     return async function (dispatch) {
-        let dog = await axios.get('https://dogs-production-baf1.up.railway.app/dogs')
-        //console.log("InfoApi", dog.data)
-        return dispatch({
-            type: GET_ALL_DOGS,
-            payload: dog.data
-        })
+        try {
+
+            let dog = await axios.get('https://dogs-production-baf1.up.railway.app/dogs')
+            //console.log("InfoApi", dog.data)
+            return dispatch({
+                type: GET_ALL_DOGS,
+                payload: dog.data
+            })
+        } catch (error) {
+            alert("No se encontro perro");
+        }
+
     }
 }
 
@@ -61,7 +69,7 @@ export const filtroDbandPi = (payload) => {
 export const getDogDetail = (id) => {
 
     return async (dispatch) => {
-        await axios.get(`https://dogs-production-baf1.up.railway.app/dogs${id}`)
+        await axios.get(`https://dogs-production-baf1.up.railway.app/dogs/${id}`)
             .then((response) =>
                 dispatch({ type: GET_DOGS_DETAILS, payload: response.data })
             )
