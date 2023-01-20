@@ -48,14 +48,20 @@ export const getTempe = () => {
 export const seekDogs = (name) => {
 
     return async function (dispatch) {
-        let query = await fetch(`https://dogs-production-baf1.up.railway.app/dogs?name=${name}`)
-        let json = await query.json()
-        return dispatch({
-            type: SEARCH_DOGS,
-            payload: json
-        })
-    }
+        try {
 
+            let query = await fetch(`https://dogs-production-baf1.up.railway.app/dogs?name=${name}`)
+            let json = await query.json()
+            return dispatch({
+                type: SEARCH_DOGS,
+                payload: json
+            })
+
+        } catch (error) {
+            alert("No se encontro perro")
+
+        }
+    }
 }
 
 

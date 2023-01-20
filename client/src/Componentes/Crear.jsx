@@ -113,6 +113,7 @@ function Crear() {
                             type="text"
                             value={dogs.name}
                             name="name"
+                            required
                             onChange={(e) => handleChange(e)}
                         />
                         {errors.name && (
@@ -127,6 +128,7 @@ function Crear() {
                             type="text"
                             value={dogs.image}
                             name="image"
+                            required
                             onChange={(e) => handleChange(e)}
                         />
                         {errors.image && (
