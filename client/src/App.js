@@ -4,6 +4,7 @@ import Landing from './Componentes/Landing';
 import Home from './Componentes/Home';
 import Detail from './Componentes/Detail';
 import Nav from './Componentes/Nav';
+import Crear from './Componentes/Crear';
 //import axios from 'axios';
 //axios.defaults.baseURL= 'http://localhost:3001';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/home" component={Home} />
         <Route path="/detail/:id" component={Detail} />
         <Route exact path="/" component={Landing} />
+        <Route path="/create" component={Crear} />
       </BrowserRouter>
     </>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import style from '../Componentes/landing.module.css';
-import foto from '../Fotos/perro.jpg'
+import foto from '../Fotos/lan.png'
 
 
 function Landing() {

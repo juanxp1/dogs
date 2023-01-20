@@ -10,3 +10,18 @@
 img {
     height: 350px;
 }
+
+.crear {
+    margin-top: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border: #FF9900 2px solid;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nn {
+    margin-top: 20px;
+}

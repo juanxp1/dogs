@@ -44,10 +44,20 @@
 
 }
 
-.refre {
-
-    padding-bottom: 30px;
+.filtro{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    gap: 100px;
+    height: 30px;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: #141414;
 }
+
+
+
 
 .paginado {
     align-items: center;
