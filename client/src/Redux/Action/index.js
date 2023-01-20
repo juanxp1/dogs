@@ -27,7 +27,7 @@ export const getAllDogs = () => {
 
 export const getTempe = () => {
     return async function (dispatch) {
-        let tempe = await axios.get('https://dogs-production-baf1.up.railway.app/dogs/temperamento')
+        let tempe = await axios.get('https://dogs-production-baf1.up.railway.app/temperamento')
         console.log("tempeee", tempe)
         return dispatch({
             type: GET_TEMPERAMENTO,
