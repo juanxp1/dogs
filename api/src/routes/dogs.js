@@ -132,9 +132,9 @@ router.post('/', async (req, res) => {
 
     const { name, image, weight, height, life_span, temperament } = req.body
 
-    if (!name || !weight || !height || !image || !life_span || !temperament ) {
-        return res.status(404).json('Data Incomplete');
-    };
+    // if (!name || !weight || !height || !image || !life_span || !temperament ) {
+    //     return res.status(404).json('Data Incomplete');
+    // };
 
     try {
         const newDog = await Dog.create({
