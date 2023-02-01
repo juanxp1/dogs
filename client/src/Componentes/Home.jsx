@@ -69,7 +69,6 @@ function Home() {
     <>
       <div className={style.home}>
         <div>
-
           <div className={style.filtro}>
 
             <select onChange={e => handleSort(e)} className={style.refresh}>
@@ -140,9 +139,8 @@ function Home() {
           })}
 
         </div>
-
-
       </div>
+
     </>
   )
 }

@@ -7,7 +7,8 @@ const {
 } = process.env;
 
 const sequelize = new Sequelize(
-  "postgresql://postgres:q1rJZJvWJh77rOuAQmgx@containers-us-west-67.railway.app:6428/railway"
+  //"postgresql://postgres:q1rJZJvWJh77rOuAQmgx@containers-us-west-67.railway.app:6428/railway"
+  `postgresql://postgres:xGOPXR4tKw3pqXEZXKFB@containers-us-west-157.railway.app:6383/railway`
 
   // `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`
   , {

@@ -11,6 +11,7 @@ function Tarjeta({ id, name, image, temperament, weight, temperamentos }) {
 
 
     return (
+
         <div className={style.container}>
             <div className={style.tarjeta}>
                 <img src={`${image}`} className={style.img} alt={`imagen`} />
@@ -24,6 +25,7 @@ function Tarjeta({ id, name, image, temperament, weight, temperamentos }) {
 
             </div>
         </div>
+
     )
 }
 
